@@ -14,6 +14,7 @@ jobs:
         runs-on: windows-latest
         steps: 
             - name: Show another OS
+              shell: bash
               run: |
                 echo "This is a second job should run on windows"
                 echo "Runner OS: $RUNNER_OS"
