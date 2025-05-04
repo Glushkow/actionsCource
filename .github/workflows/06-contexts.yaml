@@ -1,4 +1,4 @@
-name: 06 cource yaml
+name: 06-ciontext-cource yaml
 run-name: 06-contexts My custom workflow run name | ${{ inputs.debug }}
 
 on: 
