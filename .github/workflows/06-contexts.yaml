@@ -1,9 +1,13 @@
 name: 06 cource yaml
-run-name: My custom workflow run name - ${{ runner.os }}
+run-name: 06-contexts: My custom workflow run name | ${{ inputs.debug }}
 
 on: 
     push:
     workflow_dispatch:
+        inputs:
+            debug:
+                type: boolean
+                default: false
 
 
 jobs:
