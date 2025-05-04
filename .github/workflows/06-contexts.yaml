@@ -1,5 +1,5 @@
 name: 06 cource yaml
-run-name: 06-contexts: My custom workflow run name | ${{ inputs.debug }}
+run-name: 06-contexts My custom workflow run name | ${{ inputs.debug }}
 
 on: 
     push:
