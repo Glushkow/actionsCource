@@ -1,15 +1,17 @@
-name: 05-Event Filters activity types
+name: 05 - Event Filters with Activity Types
 
 on:
-    pull_request:
-        types:
-            - opened
-            - synchronize
-        branches:
-            - main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
 
 jobs:
-    echo:
-        runs-on: ubuntu-latest
-        steps:
-            - run: echo "Running whnever a PR is opened or syncr AND base branch is main"
+  validate-pr:
+    name: Validate Pull Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo PR validation message
+        run: echo "Running whenever a PR is opened or synchronized AND base branch is main"
